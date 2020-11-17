@@ -144,6 +144,20 @@ module.exports = {
         searchMaxSuggestions: 10,
         thirdparty: [],
       },
-    ]
+    ],
+    [
+      "@vssue/vuepress-plugin-vssue",
+      {
+        // set `platform` rather than `api`
+        platform: "github-v4",
+
+        // all other options of Vssue are allowed
+        owner: "MonoLogueChi",
+        repo: "router86.u2sb.top-vssue",
+        clientId: "745792e3f1ab3df97461",
+        clientSecret: "a76b00308473a406bb5a999597aa986a66288781",
+        locale: "zh",
+      },
+    ],
   ],
 };

@@ -1,3 +1,6 @@
+dependencies:
+  '@vssue/api-github-v4': 1.4.0
+  '@vssue/vuepress-plugin-vssue': 1.4.6_vuepress@1.7.1
 devDependencies:
   dplayer: 1.26.0
   markdown-it-attrs: 3.0.3
@@ -13,7 +16,7 @@ devDependencies:
   vuepress-plugin-thirdparty-search: 1.0.2
   vuepress-plugin-zooming: 1.1.8
   vuepress-theme-vdoing: 1.5.1
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
     dependencies:
@@ -1054,6 +1057,29 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+  /@vssue/api-github-v4/1.4.0:
+    dependencies:
+      '@vssue/utils': 1.4.0
+      axios: 0.18.1
+    dev: false
+    resolution:
+      integrity: sha512-AdMYX62zXolvbJl0YoLjMQfoyIaK+pso2TVb34L+tjqfxgfubRm6mE/pWU7cKLiWMn6IaiS0LotC2O4y/omqDQ==
+  /@vssue/utils/1.4.0:
+    dependencies:
+      date-fns: 1.30.1
+      qs: 6.9.4
+    dev: false
+    resolution:
+      integrity: sha512-3d9WCYNurdFKApFzU8i7YD1GCGhunEVYnwSJxwQ2rDmEdpLneAYNJWg9+QS6bqzB+Pw7ymtwLf/Sqti9+xUGqA==
+  /@vssue/vuepress-plugin-vssue/1.4.6_vuepress@1.7.1:
+    dependencies:
+      vssue: 1.4.6
+      vuepress: 1.7.1
+    dev: false
+    peerDependencies:
+      vuepress: ^1.0.0
+    resolution:
+      integrity: sha512-oP63mMvue54ASrfMJVTpmT74is4eU2OeAqDqSOLYUytpqgba2AKPXnq6xhY8fua/+hxpttq0pOVajF6GL4WTgg==
   /@vue/babel-helper-vue-jsx-merge-props/1.0.0:
     dev: true
     resolution:
@@ -1227,7 +1253,7 @@ packages:
       vue-template-compiler: 2.6.12
       vuepress-html-webpack-plugin: 3.2.0_webpack@4.44.2
       vuepress-plugin-container: 2.1.5
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-chain: 6.5.1
       webpack-dev-server: 3.11.0_webpack@4.44.2
       webpack-merge: 4.2.2
@@ -1768,6 +1794,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
+  /axios/0.18.1:
+    dependencies:
+      follow-redirects: 1.5.10
+      is-buffer: 2.0.5
+    dev: false
+    resolution:
+      integrity: sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
   /axios/0.19.2:
     dependencies:
       follow-redirects: 1.5.10
@@ -1782,7 +1815,7 @@ packages:
       mkdirp: 0.5.5
       pify: 4.0.1
       schema-utils: 2.7.1
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 6.9'
@@ -2114,7 +2147,7 @@ packages:
       mkdirp: 0.5.5
       neo-async: 2.6.2
       schema-utils: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 6.9.0'
@@ -2572,7 +2605,7 @@ packages:
       p-limit: 2.3.0
       schema-utils: 1.0.0
       serialize-javascript: 4.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-log: 2.0.0
     dev: true
     engines:
@@ -2696,7 +2729,7 @@ packages:
       postcss-modules-values: 2.0.0
       postcss-value-parser: 3.3.1
       schema-utils: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 6.9.0'
@@ -2870,6 +2903,10 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
+  /date-fns/1.30.1:
+    dev: false
+    resolution:
+      integrity: sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
   /de-indent/1.0.2:
     dev: true
     resolution:
@@ -2883,7 +2920,6 @@ packages:
   /debug/3.1.0:
     dependencies:
       ms: 2.0.0
-    dev: true
     resolution:
       integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/3.2.6:
@@ -3597,7 +3633,7 @@ packages:
     dependencies:
       loader-utils: 1.4.0
       schema-utils: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 6.9.0'
@@ -3678,7 +3714,6 @@ packages:
   /follow-redirects/1.5.10:
     dependencies:
       debug: 3.1.0
-    dev: true
     engines:
       node: '>=4.0'
     resolution:
@@ -3824,6 +3859,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
+  /github-markdown-css/3.0.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-9G5CIPsHoyk5ObDsb/H4KTi23J8KE1oDd4KYU51qwqeM+lKWAiO7abpSgCkyWswgmSKBiuE7/4f8xUz7f2qAiQ==
   /glob-parent/3.1.0:
     dependencies:
       is-glob: 3.1.0
@@ -4461,6 +4502,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+  /is-buffer/2.0.5:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
   /is-callable/1.2.2:
     dev: true
     engines:
@@ -5315,7 +5362,7 @@ packages:
       loader-utils: 1.4.0
       normalize-url: 2.0.1
       schema-utils: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -5399,7 +5446,6 @@ packages:
     resolution:
       integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=
   /ms/2.0.0:
-    dev: true
     resolution:
       integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /ms/2.1.1:
@@ -5701,7 +5747,7 @@ packages:
     dependencies:
       cssnano: 4.1.10
       last-call-webpack-plugin: 3.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     peerDependencies:
       webpack: ^4.0.0
@@ -6474,6 +6520,12 @@ packages:
       node: '>=0.6'
     resolution:
       integrity: sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+  /qs/6.9.4:
+    dev: false
+    engines:
+      node: '>=0.6'
+    resolution:
+      integrity: sha512-A1kFqHekCTM7cz0udomYUoYNWjBebHm/5wzU/XqrBRBNWectVH0QIiN+NEcZ0Dte5hvzHwbr8+XQmguPhJ6WdQ==
   /query-string/5.1.1:
     dependencies:
       decode-uri-component: 0.2.0
@@ -7484,7 +7536,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -7827,7 +7879,7 @@ packages:
       loader-utils: 1.4.0
       mime: 2.4.6
       schema-utils: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 6.9.0'
@@ -7934,10 +7986,32 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+  /vssue/1.4.6:
+    dependencies:
+      '@vssue/utils': 1.4.0
+      github-markdown-css: 3.0.1
+      vue: 2.6.12
+      vue-i18n: 8.22.1
+      vue-property-decorator: 8.5.1_vue@2.6.12
+    dev: false
+    resolution:
+      integrity: sha512-s92qMIaI/9LzBQCUUaX0fpNlA3kRRGtm0hQxDN/YBziOB4NXTWgPvoimLreyjP75hRItHvVhKzkXiZ8bIMjy7A==
+  /vue-class-component/7.2.6_vue@2.6.12:
+    dependencies:
+      vue: 2.6.12
+    dev: false
+    peerDependencies:
+      vue: ^2.0.0
+    resolution:
+      integrity: sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==
   /vue-hot-reload-api/2.3.4:
     dev: true
     resolution:
       integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+  /vue-i18n/8.22.1:
+    dev: false
+    resolution:
+      integrity: sha512-JNgiEJ5a8YPfk5y2lKyfOAGLmkpAVfhaUi+T4wGpSppRYZ3XSyawSDDketY5KV2CsAiBLAGEIO6jO+0l2hQubg==
   /vue-loader/15.9.3_b23ea844e0723267a3b33acf81a290b4:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
@@ -7948,7 +8022,7 @@ packages:
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.2
       vue-template-compiler: 2.6.12
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     peerDependencies:
       cache-loader: '*'
@@ -7962,6 +8036,15 @@ packages:
         optional: true
     resolution:
       integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
+  /vue-property-decorator/8.5.1_vue@2.6.12:
+    dependencies:
+      vue: 2.6.12
+      vue-class-component: 7.2.6_vue@2.6.12
+    dev: false
+    peerDependencies:
+      vue: '*'
+    resolution:
+      integrity: sha512-O6OUN2OMsYTGPvgFtXeBU3jPnX5ffQ9V4I1WfxFQ6dqz6cOUbR3Usou7kgFpfiXDvV7dJQSFcJ5yUPgOtPPm1Q==
   /vue-router/3.4.5:
     dev: true
     resolution:
@@ -7998,7 +8081,6 @@ packages:
     resolution:
       integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
   /vue/2.6.12:
-    dev: true
     resolution:
       integrity: sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
   /vuepress-html-webpack-plugin/3.2.0_webpack@4.44.2:
@@ -8010,7 +8092,7 @@ packages:
       tapable: 1.1.3
       toposort: 1.0.7
       util.promisify: 1.0.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>=6.9'
@@ -8148,7 +8230,7 @@ packages:
       mime: 2.4.6
       mkdirp: 0.5.5
       range-parser: 1.2.1
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-log: 2.0.0
     dev: true
     engines:
@@ -8188,7 +8270,7 @@ packages:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       webpack-dev-middleware: 3.7.2_webpack@4.44.2
       webpack-log: 2.0.0
       ws: 6.2.1
@@ -8227,7 +8309,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
-  /webpack/4.44.2_webpack@4.44.2:
+  /webpack/4.44.2:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -8257,7 +8339,6 @@ packages:
       node: '>=6.11.5'
     hasBin: true
     peerDependencies:
-      webpack: '*'
       webpack-cli: '*'
       webpack-command: '*'
     peerDependenciesMeta:
@@ -8276,7 +8357,7 @@ packages:
       pretty-time: 1.1.0
       std-env: 2.2.1
       text-table: 0.2.0
-      webpack: 4.44.2_webpack@4.44.2
+      webpack: 4.44.2
       wrap-ansi: 5.1.0
     dev: true
     engines:
@@ -8436,6 +8517,8 @@ packages:
     resolution:
       integrity: sha512-Z38dkZRQsFNBE67+xDBQLNKMs5J1Gc+s3/zO6iezTrC24VYLJV7YPBdBDJmiLhff5qa6Awxv4wsjqx3oYz2MYA==
 specifiers:
+  '@vssue/api-github-v4': ^1.4.0
+  '@vssue/vuepress-plugin-vssue': ^1.4.6
   dplayer: ^1.26.0
   markdown-it-attrs: ^3.0.3
   markdown-it-footnote: ^3.0.2
