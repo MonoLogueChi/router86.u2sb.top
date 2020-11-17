@@ -9,7 +9,7 @@
       sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"
     ></iframe>
     <script>
-      var bbplayers = document.getElementsByClassName("bbplayer");
+      var bbplayers = document.getElementsByClassName('bbplayer');
       bbplayers.forEach(function (item, index, arr) {
         item.style.height = item.scrollWidth * 0.76 + "px";
       });
