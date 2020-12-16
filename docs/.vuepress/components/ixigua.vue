@@ -25,10 +25,15 @@
 <script>
 export default {
   props: {
-    id: {
+    xid: {
       type: String,
       default: null,
       required: true,
+    },
+    id: {
+      type: String,
+      default: null,
+      required: false,
     },
     autoplay: {
       type: Boolean,
@@ -43,9 +48,9 @@ export default {
   },
   data() {
     return {
-      src: `//www.ixigua.com/iframe/${this.id}?autoplay=${
-        this.autoplay ? 1 : 0
-      }&startTime=${this.startTime}`,
+      src: `//www.ixigua.com/iframe/${this.xid}?${
+        this.id == null || thid.id == "" ? "" : "id=" + this.id + "&"
+      }autoplay=${this.autoplay ? 1 : 0}&startTime=${this.startTime}`,
     };
   },
 };
