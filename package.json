@@ -11,22 +11,21 @@
   "license": "ISC",
   "devDependencies": {
     "dplayer": "^1.26.0",
-    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-attrs": "^4.0.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^1.7.1",
+    "vuepress": "^1.8.0",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-pangu": "^1.0.1",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.5.1"
+    "vuepress-theme-vdoing": "^1.7.2"
   },
   "dependencies": {
-    "@vssue/api-github-v4": "^1.4.0",
-    "@vssue/vuepress-plugin-vssue": "^1.4.6"
+    "vuepress-plugin-comment": "^0.7.3"
   }
 }

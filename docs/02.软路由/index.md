@@ -11,6 +11,7 @@ permalink: /router86/
 sidebar: true
 article: false
 comment: false
+comments: false 
 editLink: false
 ---
 

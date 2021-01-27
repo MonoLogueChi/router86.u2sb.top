@@ -12,9 +12,9 @@ features: # 可选的
     details: OMV系统相关内容
     link: /nas/ # 可选
     # imgUrl: /img/web.png # 可选
-  - title: 
-    details: 
-    link: 
+  - title:
+    details:
+    link:
   - title: 软路由
     details: OpenWrt系统相关内容
     link: /router86/
@@ -23,9 +23,9 @@ features: # 可选的
     details: 硬件装机相关内容
     link: /hardware/
     # imgUrl: /img/other.png
-  - title: 
-    details: 
-    link: 
+  - title:
+    details:
+    link:
   - title: Linux
     details: Linux相关内容
     link: /linux/

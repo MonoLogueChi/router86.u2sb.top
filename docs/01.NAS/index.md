@@ -11,5 +11,6 @@ permalink: /nas/
 sidebar: true
 article: false
 comment: false
+comments: false 
 editLink: false
 ---
