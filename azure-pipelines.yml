@@ -31,4 +31,4 @@ steps:
       git init
       git add .
       git commit -m update
-      git push --force --quiet https://$(TOKEN)@github.com/MonoLogueChi/router86.u2sb.top.git master:gh-pages
+      git push --force --quiet https://$(TOKEN)@github.com/MonoLogueChi/wiki.router86.com.git master:gh-pages

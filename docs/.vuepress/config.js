@@ -150,12 +150,16 @@ module.exports = {
       {
         choosen: "gitalk",
         options: {
-          clientId: "745792e3f1ab3df97461",
+          id: "<%- frontmatter.commentid || frontmatter.permalink %>",
+          title: "「Comment」<%- frontmatter.title %>",
+          body:
+            "<%- frontmatter.title %>：<%-window.location.origin %><%- frontmatter.to.path || window.location.pathname %>",
+          clientID: "745792e3f1ab3df97461",
           clientSecret: "a76b00308473a406bb5a999597aa986a66288781",
           owner: "MonoLogueChi",
           repo: "wiki.router86.com-comments",
           admin: [
-            "GitHub repo owner and collaborators, only these guys can initialize github issues",
+            "MonoLogueChi",
           ],
           distractionFreeMode: false,
         },
