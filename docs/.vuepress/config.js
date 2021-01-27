@@ -115,7 +115,7 @@ module.exports = {
     },
   },
   plugins: [
-    ["sitemap", { hostname: "https://router86.u2sb.top" }],
+    ["sitemap", { hostname: "https://wiki.router86.com" }],
     ["vuepress-plugin-pangu"],
     [
       "one-click-copy",
