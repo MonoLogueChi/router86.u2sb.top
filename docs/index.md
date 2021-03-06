@@ -49,4 +49,4 @@ postList: none
 
 - 软路由交流 2 群 ：274052728
 - 软路由交流 3 群 ：972313206
-- 电报 ： https://t.me/router86
+- 电报 ： [https://t.me/router86](https://t.me/router86)
