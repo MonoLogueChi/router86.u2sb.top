@@ -1,5 +1,5 @@
 {
-  "name": "router86.u2sb.top",
+  "name": "wiki.router86.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,13 +17,13 @@
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^1.8.0",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-plugin-pangu": "^1.0.1",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.7.2"
+    "vuepress-theme-vdoing": "^1.8.1"
   },
   "dependencies": {
     "vuepress-plugin-comment": "^0.7.3"
